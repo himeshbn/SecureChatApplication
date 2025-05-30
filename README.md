@@ -51,8 +51,8 @@ pip install cryptography
 
 1. Clone the Repository
 
-git clone https://github.com/your-repo/secure-chat.git
-cd secure-chat
+git clone https://github.com/your-repo/SecureChatApplication.git
+cd SecureChatApplication
 
 2. (Optional) Create a Virtual Environment
 
