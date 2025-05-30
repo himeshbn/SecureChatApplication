@@ -1,21 +1,21 @@
-Secure Chat Application Using Diffie-Hellman Key Exchange and AES Encryption
+# Secure Chat Application Using Diffie-Hellman Key Exchange and AES Encryption
 
-This project demonstrates a secure chat system implemented in Python using the Diffie-Hellman key exchange protocol and AES encryption for securing message communication between a server and a client.
+# This project demonstrates a secure chat system implemented in Python using the Diffie-Hellman key exchange protocol and AES encryption for securing message communication between a server and a client.
 
-👨‍💻 Developed By
+# 👨‍💻 Developed By
 
-Himesh B N
+# Himesh B N
 
-Madhuchandan K S
+# Madhuchandan K S
 
-Department of Computer Science and Engineering (IoT and Cybersecurity including Blockchain Technology),
-Bangalore Institute of Technology
+# Department of Computer Science and Engineering (IoT and Cybersecurity including Blockchain Technology),
+# Bangalore Institute of Technology
 
-📖 Project Description
+# 📖 Project Description
 
 The Secure Chat Application enables two parties (client and server) to exchange messages securely through a symmetric AES key derived from a Diffie-Hellman key exchange. The chat interface is developed using Tkinter for simplicity and ease of use.
 
-🔧 Features
+# 🔧 Features
 
 Secure key exchange using Diffie-Hellman
 
@@ -29,7 +29,7 @@ Multi-threaded architecture (no GUI blocking)
 
 Tkinter-based simple GUI interface
 
-⚙️ Requirements
+# ⚙️ Requirements
 
 Hardware
 
@@ -47,7 +47,7 @@ Python Libraries
 
 pip install cryptography
 
-📝 Installation Guide
+# 📝 Installation Guide
 
 1. Clone the Repository
 
@@ -57,17 +57,17 @@ cd SecureChatApplication
 2. (Optional) Create a Virtual Environment
 
 python -m venv venv
-# Activate:
-# Windows:
-venv\Scripts\activate
-# macOS/Linux:
-source venv/bin/activate
+# Activate
+# Windows: venv\Scripts\activate
 
-3. Install Required Packages
+# macOS/Linux: source venv/bin/activate
+
+
+# 3. Install Required Packages
 
 pip install cryptography
 
-4. Open in Visual Studio Code
+# 4. Open in Visual Studio Code
 
 Launch VS Code
 
@@ -75,7 +75,7 @@ Open the project folder
 
 Use integrated terminal to run the files
 
-🚀 How to Run
+# 🚀 How to Run
 
 Step 1: Start the Server
 
@@ -89,7 +89,7 @@ python client.py
 
 Automatically connects to server and starts secure chat
 
-🔒 Cryptographic Techniques Used
+# 🔒 Cryptographic Techniques Used
 
 Diffie-Hellman Key Exchange
 
@@ -103,23 +103,7 @@ Encrypts message using random IVs and PKCS7 padding
 
 Prepends IV to the encrypted message for secure decryption
 
-Sample Code Snippet
-
-# AES Encryption
-iv = os.urandom(16)
-padder = padding.PKCS7(128).padder()
-padded = padder.update(plaintext.encode()) + padder.finalize()
-cipher = Cipher(algorithms.AES(key), modes.CBC(iv))
-ciphertext = cipher.encryptor().update(padded) + cipher.encryptor().finalize()
-
-📆 Project Structure
-
-SecureChatApplication/
-├── serverGui.py           # Server-side code
-├── clientGui.py           # Client-side code
-├── README.md           # Project documentation
-
-✅ Advantages
+# ✅ Advantages
 
 Secure end-to-end encryption
 
@@ -129,7 +113,7 @@ Easy-to-use interface
 
 Lightweight and portable
 
-❌ Limitations
+# ❌ Limitations
 
 Weak DH parameters (for demo only)
 
@@ -137,7 +121,7 @@ No authentication or integrity check
 
 Only works over localhost by default
 
-🌟 Future Enhancements
+# 🌟 Future Enhancements
 
 Replace DH with strong key sizes or ECC
 
